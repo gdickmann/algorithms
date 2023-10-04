@@ -5,8 +5,6 @@ public class ContainerWithMostWater {
     }
 
     public static int maxArea(int[] height) {
-        // please don't put me at r/programminghorror
-
         if (height.length == 1) return height[0] * 1;
 
         if (height.length == 2) {
