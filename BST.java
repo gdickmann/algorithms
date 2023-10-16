@@ -53,7 +53,7 @@ public class Main {
 	}
 	
 	static Node insert(Node node, int key) 
-    { 
+    	{ 
         if (node == null) 
             return new Node(key); 
   
@@ -63,7 +63,7 @@ public class Main {
             node.right = insert(node.right, key); 
   
         return node; 
-    } 
+    	} 
 	
 	private static List<String> readFromInputStream(String path) throws IOException {
 		List<String> response = new ArrayList<String>();
@@ -82,7 +82,7 @@ public class Main {
 	}
 	
 	static void printInorder(Node node)
-    {
+    	{
         if (node == null)
             return;
  
@@ -91,10 +91,10 @@ public class Main {
         System.out.print(node.value);
  
         printInorder(node.right);
-    }
+    	}
 	
 	static void printPreorder(Node node)
-    {
+    	{
         if (node == null)
             return;
  
@@ -102,10 +102,10 @@ public class Main {
  
         printPreorder(node.left);
         printPreorder(node.right);
-    }
+    	}
 	
 	static void printPostorder(Node node)
-    {
+    	{
         if (node == null)
             return;
  
@@ -113,7 +113,7 @@ public class Main {
         printPostorder(node.right);
  
         System.out.print(node.value);
-    }
+    	}
 	
 	public static class Node {
 		
