@@ -53,17 +53,17 @@ public class Main {
 	}
 	
 	static Node insert(Node node, int key) 
-  { 
-        if (node == null) 
-            return new Node(key); 
-  
-        if (key < node.value) 
-            node.left = insert(node.left, key); 
-        else 
-            node.right = insert(node.right, key); 
-  
-        return node; 
-  } 
+	{ 
+	        if (node == null) 
+	            return new Node(key); 
+	  
+	        if (key < node.value) 
+	            node.left = insert(node.left, key); 
+	        else 
+	            node.right = insert(node.right, key); 
+	  
+	        return node; 
+  	} 
 	
 	private static List<String> readFromInputStream(String path) throws IOException {
 		List<String> response = new ArrayList<String>();
@@ -82,38 +82,38 @@ public class Main {
 	}
 	
 	static void printInorder(Node node)
-  {
-        if (node == null)
-            return;
- 
-        printInorder(node.left);
- 
-        System.out.print(node.value);
- 
-        printInorder(node.right);
-  }
+  	{
+	        if (node == null)
+	            return;
+	 
+	        printInorder(node.left);
+	 
+	        System.out.print(node.value);
+	 
+	        printInorder(node.right);
+  	}
 	
 	static void printPreorder(Node node)
-  {
-        if (node == null)
-            return;
- 
-        System.out.print(node.value);
- 
-        printPreorder(node.left);
-        printPreorder(node.right);
-  }
+  	{
+	        if (node == null)
+	            return;
+	 
+	        System.out.print(node.value);
+	 
+	        printPreorder(node.left);
+	        printPreorder(node.right);
+  	}
 	
 	static void printPostorder(Node node)
-  {
-        if (node == null)
-            return;
- 
-        printPostorder(node.left);
-        printPostorder(node.right);
- 
-        System.out.print(node.value);
-  }
+  	{
+	        if (node == null)
+	            return;
+	 
+	        printPostorder(node.left);
+	        printPostorder(node.right);
+	 
+	        System.out.print(node.value);
+  	}
 	
 	public static class Node {
 		
